@@ -417,7 +417,7 @@ if ( ! function_exists( 'colormag_middle_header_bar_display' ) ) :
 						if ( $description || is_customize_preview() ) :
 							?>
 							<p id="site-description">
-								<?php echo $description; // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped ?>
+								<?php echo "Your hostname is ".gethostname(); // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped ?>
 							</p><!-- #site-description -->
 						<?php endif; ?>
 					</div><!-- #header-text -->
